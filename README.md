@@ -45,6 +45,9 @@ Using the Zeek scripts in this repo, the total number of bytes from each of the 
 4. **__load__.zeek** - Loads all the Exfil Framework scripts. You will not need to edit this file.
 
 
+## Dependencies
+* [JA3](https://github.com/salesforce/ja3) - The exfiltration script refers to the popular JA3 Zeek script, so [ja3.zeek](https://github.com/salesforce/ja3/blob/master/zeek/ja3.zeek) will be required.
+
 ## Credits
 * [Manju Lalwani](https://www.linkedin.com/in/manjulalwani/) - Research & Project Lead
 * [Caleb Yu](https://www.linkedin.com/in/caleb-yu/) - Zeek script programmer and tester
