@@ -39,8 +39,8 @@ bytes |   /                                                % - Data stream from 
 Using the Zeek scripts in this repo, the total number of bytes from each of the five threads (three pictured in the diagram) is aggregated and a notice is raised because the byte threshold is crossed.
 
 ## Script Explanations
-1. **main.bro** - The primary script that drives the Exfil Framework.
-2. **app-exfil-conn.bro** - The script that attaches the Exfil Framework to connections. You will want to edit the redefs exported by this script to choose which connections get monitored for file uploads. **Note:** Start small. If this script is attached to a lot of connections, it may negatively impact the amount of traffic your Zeek sensor can process.
+1. **main.zeek** - The primary script that drives the Exfil Framework.
+2. **app-exfil-conn.zeek** - The script that attaches the Exfil Framework to connections. You will want to edit the redefs exported by this script to choose which connections get monitored for file uploads. **Note:** Start small. If this script is attached to a lot of connections, it may negatively impact the amount of traffic your Zeek sensor can process.
 3. **threaded_exfil.zeek** - Adds events that are necessary for aggregating threads.
 4. **__load__.zeek** - Loads all the Exfil Framework scripts. You will not need to edit this file.
 
